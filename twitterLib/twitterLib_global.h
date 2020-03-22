@@ -1,0 +1,12 @@
+#ifndef TWITTERLIB_GLOBAL_H
+#define TWITTERLIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(TWITTERLIB_LIBRARY)
+#  define TWITTERLIB_EXPORT Q_DECL_EXPORT
+#else
+#  define TWITTERLIB_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // TWITTERLIB_GLOBAL_H
